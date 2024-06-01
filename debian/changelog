@@ -1,5 +1,47 @@
-template-repository (1.0-1) unstable; urgency=medium
+golang-github-xanzy-ssh-agent (0.3.2-1) unstable; urgency=medium
 
-  * Initial release
+  * Team upload.
 
- -- Tsic404 <liuheng@deepin.org>  Sat, 28 Jan 2023 13:46:49 +0800
+  [ Debian Janitor ]
+  * Set upstream metadata fields: Bug-Database, Bug-Submit, Repository,
+    Repository-Browse.
+  * Update standards version to 4.5.1, no changes needed.
+
+  [ Drew Parsons ]
+  * New upstream release.
+  * Build-Depends: golang-golang-x-crypto-dev (>= 0.1.0~),
+    golang-golang-x-sys-dev (>= 0.1.0~)
+  * Standards-Version: 4.6.1
+
+ -- Drew Parsons <dparsons@debian.org>  Tue, 08 Nov 2022 17:27:47 +0100
+
+golang-github-xanzy-ssh-agent (0.2.1-1) unstable; urgency=medium
+
+  * Team upload.
+  * New upstream release.
+  * debhelper compatibility level 13:
+    Build-Depends: debhelper-compat (= 13)
+  * Standards-Version: 4.5.0
+
+ -- Drew Parsons <dparsons@debian.org>  Mon, 28 Sep 2020 00:25:07 +0800
+
+golang-github-xanzy-ssh-agent (0.2.0-1) unstable; urgency=medium
+
+  [ Alexandre Viau ]
+  * Point Vcs-* urls to salsa.debian.org.
+
+  [ Dr. Tobias Quathamer ]
+  * New upstream version 0.2.0
+  * Use debhelper v11
+  * Use version 4 for d/watch
+  * Update Standards-Version to 4.2.1
+    - Use Priority optional
+  * Update maintainer e-mail address
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Thu, 30 Aug 2018 09:50:28 +0200
+
+golang-github-xanzy-ssh-agent (0.0~git20151215.0.ba9c9e3-1) unstable; urgency=medium
+
+  * Initial release (Closes: #821283)
+
+ -- Dr. Tobias Quathamer <toddy@debian.org>  Sun, 09 Jul 2017 12:33:17 +0200
