@@ -1,15 +1,26 @@
-Source: template-repository
-Section: unknown
+Source: golang-github-xanzy-ssh-agent
+Section: devel
 Priority: optional
-Maintainer: Tsic404 <liuheng@deepin.org>
-Build-Depends: debhelper (>= 11)
-Standards-Version: 4.1.3
-Homepage: https://github.com/deepin-community/template-repository
-#Vcs-Browser: https://salsa.debian.org/debian/deepin-community-template-repository
-#Vcs-Git: https://salsa.debian.org/debian/deepin-community-template-repository.git
+Maintainer: Debian Go Packaging Team <team+pkg-go@tracker.debian.org>
+Uploaders: Dr. Tobias Quathamer <toddy@debian.org>
+Build-Depends: debhelper-compat (= 13),
+               dh-golang,
+               golang-any,
+               golang-golang-x-crypto-dev (>= 0.1.0~),
+               golang-golang-x-sys-dev (>= 0.1.0~)
+Standards-Version: 4.6.1
+Homepage: https://github.com/xanzy/ssh-agent
+Vcs-Browser: https://salsa.debian.org/go-team/packages/golang-github-xanzy-ssh-agent
+Vcs-Git: https://salsa.debian.org/go-team/packages/golang-github-xanzy-ssh-agent.git
+XS-Go-Import-Path: github.com/xanzy/ssh-agent
+Testsuite: autopkgtest-pkg-go
 
-Package: template-repository
-Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}
-Description: <insert up to 60 chars description>
- <insert long description, indented with spaces>
+Package: golang-github-xanzy-ssh-agent-dev
+Architecture: all
+Depends: ${shlibs:Depends},
+         ${misc:Depends},
+         golang-golang-x-crypto-dev
+Multi-Arch: foreign
+Description: Go library for creating SSH agents
+ Create a new agent.Agent on any type of OS from any Go
+ application.
